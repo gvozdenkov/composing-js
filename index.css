@@ -1,0 +1,55 @@
+.page {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  max-width: 900px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.massage-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-flow: column;
+  gap: 15px;
+}
+
+.message {
+  display: flex;
+  flex-flow: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.message_type_user {
+  justify-content: flex-end;
+}
+
+.message__avatar {
+  width: 60px;
+  height: 60px;
+  aspect-ratio: 1;
+  object-fit: cover;
+  border-radius: 100%;
+  user-select: none;
+}
+
+.message__text {
+  padding: 15px;
+  border-radius: 10px;
+  background-color: lightgrey;
+  color: black;
+  cursor: pointer;
+  max-width: 70%;
+}
+
+.message__text_is-active {
+  background-color: rgb(49, 122, 195);
+  color: white;
+}
+
+.message__paragraph {
+  margin: 0;
+}
