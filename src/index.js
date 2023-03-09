@@ -1,3 +1,5 @@
+import './styles/index.css';
+
 const messageList = [
   {
     text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
@@ -79,3 +81,14 @@ messageList.forEach((message) => {
 
   messageContainer.append(newMessage.generate());
 });
+
+const pipe =
+  (...fns) =>
+  (x) =>
+    fns.reduce((v, f) => f(v), x);
+
+const getName = (person) => person.name;
+const upperCase = (str) => str.toUpperCase();
+
+const res = pipe(getName, upperCase)({ name: 'bobby' });
+console.log(res);

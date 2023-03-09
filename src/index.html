@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Proto OOP</title>
+  </head>
+  <body class="page">
+    <h1>JS Chat</h1>
+    <ul class="massage-list">
+      <!-- messages render here -->
+    </ul>
+
+    <!-- Message Template -->
+    <template class="message-template message-template_type_default">
+      <li class="message">
+        <img src="" alt="Аватар пользователя" class="message__avatar" />
+        <div class="message__text">
+          <p class="message__paragraph"></p>
+        </div>
+      </li>
+    </template>
+
+    <!-- User message Template -->
+    <template class="message-template message-template_type_user">
+      <li class="message">
+        <div class="message__text">
+          <p class="message__paragraph"></p>
+        </div>
+      </li>
+    </template>
+  </body>
+</html>
